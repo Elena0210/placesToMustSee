@@ -58,14 +58,14 @@ function App() {
       </div>
 
       {places.map((item => {
-        const { id, place, location, description, image1, website, readMore } = item;
+        const { id, place, location, description, image, website, readMore } = item;
           return (
 
 //Куда прописать key="id"??
-            <div key="id" className="main"> 
+            <div key= {id} className="main"> 
 
               <div className="container btn">
-                <img src={image1} width="500px" alt="place"/>
+                <img src={image} width="500px" alt="place"/>
                 <div className="buttons">
                   <button>previous</button>
                   {/* <button onClick={previousPlace}>previous</button>
